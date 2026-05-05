@@ -9,5 +9,29 @@
   },
   "enabledPlugins": {
     "superpowers@superpowers-dev": true
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "bash",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"SessionStart\",\"additionalContext\":\"OBSIDIAN VAULT WORKFLOW — mandatory protocol for this project. BEFORE any task: locate vault/Meeting Notes/<topic>.md (or relevant vault subfolder), read its Overview + Open Questions + Session Log fully, plus 2-3 most recent meeting notes. Briefly state what context you loaded. AFTER any task: update Overview if scope/status changed; update Open Questions (add new, remove resolved); append `### YYYY-MM-DD — <title> [status]` entry at the bottom of Session Log with [[wikilinks]] in Related (use [[wikilinks]], not markdown links inside the vault); re-read the file to verify. Full protocol: .claude/skills/obsidian-vault-workflow/SKILL.md . Vault index: vault/_index.md\"}}'"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "bash",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"UserPromptSubmit\",\"additionalContext\":\"vault/ protocol reminder: before work read relevant vault/Meeting Notes/<topic>.md (Overview + Open Questions + Session Log); after work append a dated [status] entry with [[wikilinks]] in Related. Skill: obsidian-vault-workflow.\"}}'"
+          }
+        ]
+      }
+    ]
   }
 }

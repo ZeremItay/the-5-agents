@@ -12,6 +12,11 @@ Thumbs.db
 .idea/
 *.swp
 
+# Obsidian — user-specific layout (rest of .obsidian/ is shared)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspaces.json
+
 # Logs
 *.log
 logs/
