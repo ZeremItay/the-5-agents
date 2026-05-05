@@ -15,6 +15,7 @@ tags:
 - [[reuven-orchestrator]] — Reuven, סוכן המנכ"ל (CEO orchestrator), נקודת כניסה לכל משימה
 - [[yuval-agent]] — יובל, סוכן קריאייטיב ליצירת תמונות (סאב-אייג'נט של Reuven)
 - [[yael-agent]] — יעל, סוכנת תוכן (LLM-only) שמשכתבת מאמרים בסגנון הפרויקט (סאב-אייג'נט של Reuven)
+- [[chen-agent]] — חן, חוקרת רשת (WebSearch + WebFetch) שמכינה מאמרים מתוך מקורות אמיתיים ל-pipeline של Yael (סאב-אייג'נט של Reuven)
 - [[gpt-image-gen-skill]] — skill לקריאת API של OpenAI ליצירת תמונות (משמש את Yuval)
 - [[claude-md]] — `CLAUDE.md` בשורש, התיאור הראשי של הפרויקט ל-Claude Code
 - [[env-files]] — `.env` ו-`.env.example` (משתני סביבה)
