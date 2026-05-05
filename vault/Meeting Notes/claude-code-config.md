@@ -37,3 +37,9 @@ status: shipped
 - **Decisions:** שני hooks ולא רק SessionStart, כי SessionStart יכול "להתפספס" כשהקונטקסט מתמלא; UserPromptSubmit מבטיח שכל prompt מקבל תזכורת עדכנית. בחרנו תוכן shorter ל-UserPromptSubmit ו-longer ל-SessionStart כדי לא להטיל הרבה context overhead על כל prompt. בחרנו הזרקת JSON עם `hookSpecificOutput.additionalContext` (לא plain text) כדי שהתזכורת באמת תיכנס ל-system reminder של המודל.
 - **Notes / Caveats:** ה-hooks ייכנסו לתוקף רק ב-(א) הסשן הבא של Claude Code, או (ב) אחרי שהמשתמש פותח את `/hooks` בסשן הנוכחי (הפעולה הזאת מרעננת את ה-watcher של ה-config). אומת ב-pipe test שהפקודות של שני ה-hooks מפיקות JSON תקין באורכים סבירים (SessionStart=678 chars, UserPromptSubmit=189 chars).
 - **Related:** [[obsidian-skills]], [[claude-subfolders]], [[project-scaffold]], [[superpowers-plugin]]
+
+### 2026-05-05 — Installed skill-creator plugin at project scope [shipped]
+- **What was done:** הוסף `skill-creator@claude-plugins-official` ל-`enabledPlugins` תחת project scope. הקובץ עודכן ע"י ה-CLI עצמו (`claude plugin install --scope project`) — לא נכתב ידנית. סדר המפתחות ב-`settings.json` השתנה (כעת `hooks` ראשון, אחר כך `enabledPlugins`, אחר כך `extraKnownMarketplaces`) — זה side effect של הסריאליזציה של Claude Code, לא משפיע על תפקוד.
+- **Decisions:** המשתמש ביקש להתקין מ-URL של `anthropics/skills`, אבל ה-marketplace `anthropic-agent-skills` (שזה שלו) חושף את `skill-creator` רק כתת-skill בתוך `example-skills`/`document-skills`, לא כ-plugin עצמאי. בחרנו להתקין מ-`claude-plugins-official` שכן חושף ככזה — שני המקורות מתוחזקים ע"י Anthropic.
+- **Notes / Caveats:** אומת ב-`claude plugin list` שהפלאגין מופיע ב-project scope. ה-hooks וה-marketplace `superpowers-dev` נשמרו במלואם.
+- **Related:** [[skill-creator-plugin]], [[superpowers-plugin]], [[claude-subfolders]], [[project-scaffold]]

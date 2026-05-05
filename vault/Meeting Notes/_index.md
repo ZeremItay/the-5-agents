@@ -19,6 +19,7 @@ tags:
 - [[claude-subfolders]] — `.claude/{agents,skills,commands}/` (מבנה התת-תיקיות)
 - [[obsidian-skills]] — שלוש ה-skills שמותקנות מקומית (`obsidian-vault-workflow`, `obsidian-markdown`, `obsidian-bases`)
 - [[superpowers-plugin]] — plugin של `obra/superpowers` בהתקנת project scope
+- [[skill-creator-plugin]] — plugin `skill-creator` (מ-`claude-plugins-official`) ליצירת skills חדשים
 - [[git-and-github]] — git init, remote `origin`, היסטוריית קומיטים, GitHub
 
 ## איך להוסיף נושא חדש
