@@ -11,6 +11,7 @@ tags:
 ## תיקיות
 
 - [[Meeting Notes/_index|Meeting Notes]] — ארכיטקטורה, החלטות, sessions של קוד ותשתית
+- [[CEO-Logs/_index|CEO Logs]] — לוגים יומיים של החלטות הניתוב של [[reuven-orchestrator|Reuven]] (נכתבים ב-runtime)
 - *(Content Briefs / Publishing Log / Brand Guidelines — ייווצרו כשיהיה להן תוכן רלוונטי)*
 
 ## פרוטוקול קריאה/כתיבה

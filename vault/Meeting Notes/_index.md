@@ -12,6 +12,7 @@ tags:
 ## נושאים
 
 - [[project-scaffold]] — סקירה כללית של מבנה הפרויקט הנוכחי
+- [[reuven-orchestrator]] — Reuven, סוכן המנכ"ל (CEO orchestrator), נקודת כניסה לכל משימה
 - [[claude-md]] — `CLAUDE.md` בשורש, התיאור הראשי של הפרויקט ל-Claude Code
 - [[env-files]] — `.env` ו-`.env.example` (משתני סביבה)
 - [[gitignore]] — `.gitignore` (חוסם קבצים מ-git)
